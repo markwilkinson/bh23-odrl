@@ -11,13 +11,13 @@ tags:
 
 authors:
   - name: Mark Wilkinson
-    orcid: [0000-0001-6960-357X](https://orcid.org/0000-0001-6960-357X)
+    orcid: 0000-0001-6960-357X
     affiliation: 1
   - name: Oussama Mohammed Benhamed
-    orcid: [0000-0002-2567-1914](https://orcid.org/0000-0002-2567-1914)
+    orcid: 0000-0002-2567-1914
     affiliation: 2
   - name: Thomas Liener
-    orcid: [0000-0003-3257-9937](https://orcid.org/0000-0003-3257-9937)
+    orcid: 0000-0003-3257-9937
     affiliation: 3
 
 affiliations:
