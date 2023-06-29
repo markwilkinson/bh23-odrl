@@ -8,7 +8,7 @@ tags:
   - Benefit Sharing Treaties
   - Linked Data
   - Open Digital Rights Language
-authors:
+author:
   - name: Mark Wilkinson
     orcid: [0000-0001-6960-357X](https://orcid.org/0000-0001-6960-357X)
     affiliation: 1
