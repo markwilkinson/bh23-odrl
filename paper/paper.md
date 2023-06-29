@@ -4,7 +4,7 @@ title_short: 'BioHackJP 2023 ODRL'
 tags:
   - Access control
   - Consent
-  - Federated query/analysis
+  - Federated query and analysis
   - Benefit Sharing Treaties
   - Linked Data
   - Open Digital Rights Language
