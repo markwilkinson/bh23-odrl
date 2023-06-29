@@ -42,12 +42,12 @@ git_url: https://github.com/LLTommy/BioHackJP
 
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: First Author \emph{With the adoption of the FAIR principles, there is an increasing need to facilitate automated exploration of access to global resources. The Open Digital Rights Language (ODRL) provides a possible entry-point for machine-to-machine negotiation of access, based on the consent or governing regulations associated with a resource}
+authors_short: First Author \emph{Mark D Wilkinson leads a research group at the Center for Plant Biotechnology and Genomics, and supervises Oussama Benhamed's PhD studies. The Wilkinson laboratory is a leader in FAIR advocacy and tooling, and have worked in the area of semantic interoperability research for more than 20 years. }
 ---
 
 # Background
 
-The field of bioinformatics plays a crucial role in enabling researchers to extract meaningful insights from the vast amount of biological data generated today. With advancements in technology and the availability of large-scale datasets, it has become increasingly important to develop standardized approaches for representing and integrating biological information. Linked data, a method for publishing structured data on the web, has emerged as a promising solution for facilitating the integration and interoperability of diverse biological data sources.
+With the adoption of the FAIR principles, there is an increasing need to facilitate automated exploration of access to global resources. The Open Digital Rights Language (ODRL) provides a possible entry-point for machine-to-machine negotiation of access, based on the consent or governing regulations associated with a resource
 
 The BioHackathon 2023, held in Japan, provided an ideal platform for researchers and bioinformatics enthusiasts to collaborate and explore innovative solutions to address the challenges in the field. Our project focused on the application of Linked Data and Large Language Models (LLMs) to standardize biological data and enhance its accessibility and usability.
 
