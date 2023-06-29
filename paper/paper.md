@@ -8,6 +8,7 @@ tags:
   - Benefit Sharing Treaties
   - Linked Data
   - Open Digital Rights Language
+
 authors:
   - name: Mark Wilkinson
     orcid: [0000-0001-6960-357X](https://orcid.org/0000-0001-6960-357X)
@@ -18,6 +19,7 @@ authors:
   - name: Thomas Liener
     orcid: [0000-0003-3257-9937](https://orcid.org/0000-0003-3257-9937)
     affiliation: 3
+
 affiliations:
   - name: Departamento de Biotecnología-Biología Vegetal, Escuela Técnica Superior de Ingeniería Agronómica, Alimentaria y de Biosistemas, Centro de Biotecnología y Genómica de Plantas UPM-INIA, Universidad Politécnica de Madrid (UPM) - Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA-CSIC), Madrid, ES 28223, Spain
     index: 1
