@@ -1,21 +1,30 @@
 ---
-title: 'BioHackJP 2023 Report R1: linked data standardization with LLMs'
-title_short: 'BioHackJP 2023 LD-LLM'
+title: 'BioHackJP 2023 Report R4: Access control, usage conditions,  and consent modelling (ODRL)'
+title_short: 'BioHackJP 2023 ODRL'
 tags:
+  - Access control
+  - Consent
+  - Federated query/analysis
+  - Benefit Sharing Treaties
   - Linked Data
-  - Large Language Models
+  - Open Digital Rights Language
 authors:
-  - name: First Author
-    orcid: 0000-0000-0000-0000
+  - name: Mark Wilkinson
+    orcid: [0000-0000-0000-0000](https://orcid.org/0000-0001-6960-357X)
     affiliation: 1
-  - name: Last Author
-    orcid: 0000-0000-0000-0000
+  - name: Oussama Mohammed Benhamed
+    orcid: 0000-0002-2567-1914
     affiliation: 2
+  - name: Thomas Liener
+    orcid: 0000-0003-3257-9937
+    affiliation: 3
 affiliations:
-  - name: First Affiliation
+  - name: Departamento de Biotecnología-Biología Vegetal, Escuela Técnica Superior de Ingeniería Agronómica, Alimentaria y de Biosistemas, Centro de Biotecnología y Genómica de Plantas UPM-INIA, Universidad Politécnica de Madrid (UPM) - Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA-CSIC), Madrid, ES 28223, Spain
     index: 1
-  - name: Second Affiliation
+  - name: Departamento de Biotecnología-Biología Vegetal, Escuela Técnica Superior de Ingeniería Agronómica, Alimentaria y de Biosistemas, Centro de Biotecnología y Genómica de Plantas UPM-INIA, Universidad Politécnica de Madrid (UPM) - Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA-CSIC), Madrid, ES 28223, Spain
     index: 2
+  - name: Unaffiliated
+    index: 3
 date: 30 June 2023
 cito-bibliography: paper.bib
 event: BH23JP
@@ -24,10 +33,14 @@ biohackathon_url:   "https://2023.biohackathon.org/"
 biohackathon_location: "Kagawa, Japan, 2023"
 group: R1
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackathon-jp/bh23-report-template
+git_url: https://github.com/markwilkinson/ODRL-RUBY
+git_url: https://github.com/wilkinsonlab/odrl-cce-models
+git_url: https://github.com/wilkinsonlab/odrl-translator-demo
+git_url: https://github.com/LLTommy/BioHackJP 
+
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: First Author \emph{et al.}
+authors_short: First Author \emph{With the adoption of the FAIR principles, there is an increasing need to facilitate automated exploration of access to global resources. The Open Digital Rights Language (ODRL) provides a possible entry-point for machine-to-machine negotiation of access, based on the consent or governing regulations associated with a resource}
 ---
 
 # Background
