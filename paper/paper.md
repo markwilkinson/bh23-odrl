@@ -270,11 +270,7 @@ puts p.serialize
 
 # Future work
 
-Improve visualization
-Improve pipeline for web builder through intermediate steps
-Build Germaplsm Profile
-Broaden ODRL spec covered by Ruby libraries
-Complete negotiator
+This project is ongoing, and will benefit from a number of improvements that can be implemented within a short time.  First, the narrative visualization can be improved through, for example:  1) The retrieval of labels from ontology terms, or the requirement for addition of labels during authoring, leading to a more human-readable output; 2) The pipeline between the Web authoring tool and the final ODRL document currently requires significant copy/paste effort, and should be streamlined to run in the background of the page itself; 3) The odrl-ruby gem covers most, but not all, possible constructs that are avaialable in ODRL Policies, so the gaps should be filled. In addition, the test suite currently does not have full coverage of all gem functionality, and the documentation of the gem needs significant improvement. Finally, the utility of an ODRL Profile (i.e. an ODRL Offer) is limited when it cannot automatically be compared to an incoming data access request (in the form of an ODRL Request).  A team of experts in the ShEx shape expression language mapped a preliminary strategy for comparing Offers and Requests using ShEx itself, which will hopefully minimize the degree to which we must invent an algebra to deal with Core and extended ODRL Constraint symbols.
 
 ## Acknowledgements
 
