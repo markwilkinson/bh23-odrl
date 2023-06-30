@@ -61,7 +61,7 @@ _Experimentation_ While we, and others, have been applying ODRL to the problem o
 
 
 
-![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
+![Schematic of the ODRL Information Model, taken from https://www.w3.org/TR/odrl-model/](./00Model.png)
 
 # Future work
 
