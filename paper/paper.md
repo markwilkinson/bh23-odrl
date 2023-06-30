@@ -3,9 +3,9 @@ title: 'BioHackJP 2023 Report R4: Access control, usage conditions,  and consent
 title_short: 'BioHackJP 2023 ODRL'
 tags:
   - Access control
-  - Consent
   - Federated query and analysis
-  - Benefit Sharing Treaties
+  - Consent
+  - Benefit Sharing
   - Linked Data
   - Open Digital Rights Language
 
@@ -33,7 +33,7 @@ event: BH23JP
 biohackathon_name: "BioHackathon Japan 2023"
 biohackathon_url:   "https://2023.biohackathon.org/"
 biohackathon_location: "Kagawa, Japan, 2023"
-group: R1
+group: R4
 # URL to project git repo --- should contain the actual paper.md:
 git_url: https://github.com/markwilkinson/ODRL-RUBY
 git_url: https://github.com/wilkinsonlab/odrl-cce-models
@@ -42,22 +42,24 @@ git_url: https://github.com/LLTommy/BioHackJP
 
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: First Author \emph{Mark D Wilkinson leads a research group at the Center for Plant Biotechnology and Genomics, and supervises Oussama Benhamed's PhD studies. The Wilkinson laboratory is a leader in FAIR advocacy and tooling, and have worked in the area of semantic interoperability research for more than 20 years. }
+authors_short: First Author \emph{Mark D Wilkinson leads an information sciences research group at the Center for Plant Biotechnology and Genomics, UPM-INIA-CSIC and supervises Oussama Benhamed's PhD studies. The Wilkinson laboratory is a leader in FAIR advocacy and tooling, and have worked in the area of semantic interoperability research for more than 20 years.}
 ---
 
 # Background
 
-With the adoption of the FAIR principles, there is an increasing need to facilitate automated exploration of access to global resources. The Open Digital Rights Language (ODRL) provides a possible entry-point for machine-to-machine negotiation of access, based on the consent or governing regulations associated with a resource
+With the adoption of the FAIR principles [@citesAsAuthority:Wilkinson2016], there is an increasing need to facilitate automated exploration of access to global resources. The Open Digital Rights Language (ODRL)[@citesAsAuthority:ianella2007open] provides a possible entry-point for machine-to-machine negotiation of access, based on the consent or governing regulations associated with a resource
 
-The BioHackathon 2023, held in Japan, provided an ideal platform for researchers and bioinformatics enthusiasts to collaborate and explore innovative solutions to address the challenges in the field. Our project focused on the application of Linked Data and Large Language Models (LLMs) to standardize biological data and enhance its accessibility and usability.
+ODRL is a Vocabulary and Information Model - represented in the OWL ontology language - for authoring rights, requests, and agreements around access to, and use of, resources. Though originally designed for digital objects such as music and video, its architecture offers the oppoertunity to represent access constraints and usage conditions for a wide range of resources - both digital and physical - including, for example, patient consent [@citesAsAuthority:esteves2021odrl]. ODRL represents the core types of entities that appear in the discourse around digital rights, including policies, actors/parties, actions, rules, and assets.  The Information Model captures the complex relationships between these entities, allowing rights and obligations to be applied to various assets, or parts of assets, and offered to various parties under specified conditions.  The key to ODRL is its "Constraint" class, that allows conditions to be specified that narrow the scopre of any of the entities involved - e.g. to a subset of actors, or a limit on the duration or frequenty of usage of the digital asset. Constraints are represented as a triplet of [leftOperand, operator, rightOperand], each of which has a unique symbol in the Vocabulary. Agents consuming the Constraints must be capable of understanding the semantics of each symbol (which is defined primarily through narrative text) in order to interpret the Policy document.  ODRL is thus easily extended into new domains, simply by extending the set of symbols into those thaqt represent the kinds of restrictions and comditionals that exist in that new domain.
 
-LLMs, such as OpenAI's GPT-3.5 architecture, have demonstrated remarkable capabilities in understanding and generating human-like text. Leveraging the power of LLMs, we aimed to automate the process of extracting relevant biological terms from unstructured text and mapping them to existing ontology terms. Ontologies, which are hierarchical vocabularies of terms and their semantic relationships, provide a standardized framework for organizing and categorizing biological concepts.
+ODRL became a W3 recommendation in 2018, though its adoption by the bioinformatics community has been modest. This could be explained entirely by its novelty - 5 years is seldom enough time for a novel technology to see broad uptake, and the adoption of this technology within the small, specialist community of data resource providers bears the hallmarks of its adoption being in the "innovators" phase of technology diffusion [rogers1983diffusion; denis2002explaining]. This phase is associated with experimentation to test if the new technology provides a notable advantage over a status quo, trial and error, cost/benefit analyses, and especially a focus on reducing the cost through improved tooling.  At BioHackathon 2023, we have focused on two activities:  1) tooling, to facilitate others in their adoption and understanding of the technology, and 2) experimentation through applying the technology to a novel domain; i.e., representation of the "benefit-sharing" constraints and regulations defined by international treaties governing access to germplasm (seeds).
+
+_Tooling_ ODRL documents represent a complex network of interactions between actors and the resources they have/want. They are complex to author, and their representational syntaxes adn symbols are aimed at the computational agent as the primary consumer. While this does allow a high degree of precision and granularity in constructing the Policy ruleset, the more explicit the policy the more complex the document, and thus the more difficult it becomes for the Policy to be comprehensible a human consumer. We addressed this by creating two authoring environments - one Web-based, and the other as a set of Ruby libraries.  In addition, we continued work on a visualization environment for ODRL Policy documents which converts the machine-readable syntax into narrative sentences in English, and formats them into a relatively clear set of policy statements. Given that, particularly for consent, the objective is to achieve "_informed_ consent", the accurate translation of these policy documents into a form that is easily digested and understood by non-expert patients is critical to the broader uptake of this technology within the biomedical community.
+
+_Experimentation_ While we, and others, have been applying ODRL to the problem of representing patient consent over their own personal data, we are also involved in projects that aim to "FAIRify" the data and metadata related to germplasm databases and access to their seed stocks. Access to germplasm falls under the governance of international treaties - one of which is the Nagoya Protocol [@citeAsAuthority:buck2011nagoya], which places an emphasis on the requirement for benefit sharing when being given access to a seed stock for research or crop-development purposes. Recently, there have also been concerns about "Biopiracy" and the consequences of providing access to the digital representation of germplasms [@citeAsAuthority:rabitz2015biopiracy], including elements such as quantitative trait observations, biochemical profiles or raw sequence. At BioHackathon 2023, we began some trial-and-error explorations of the use of ODRL to represent the core tenets of the Nagoya Protocol, using the specific treaty implementaiton of the Ministerio para la Transición Ecológica y el Reto Demográfico of the Government of Spain.
 
 # Outcomes
 
-To achieve our objectives, we conducted a comprehensive survey of open source language models available and evaluated their suitability for our task. We explored different models, taking into consideration factors such as performance, computational requirements, and ease of deployment. Subsequently, we sought to run the selected models on a local computer, ensuring that the infrastructure requirements were met.
 
-Having established a working environment for LLMs, we developed a set of pipelines that incorporated various natural language processing techniques to extract relevant biological terms from textual data. These terms were then matched and mapped to the corresponding ontology terms, thereby providing a standardized representation of the extracted information. By utilizing Linked Data principles, we aimed to create an interconnected network of biological knowledge that would facilitate data integration and enable advanced analysis.
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
@@ -67,7 +69,7 @@ Moving forward, there are several areas of potential future work to enhance our 
 
 ## Acknowledgements
 
-We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project. We are grateful to the organizers for providing this platform and the developers of open source language models. Special thanks to our mentors, advisors, and colleagues for their guidance and support. Without their contributions, our project in linked data standardization with LLMs in bioinformatics would not have been possible.
+We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project. MDW is funded via the European Union's Horizon 2020 research and innovation programme under the EJP RD COFUND-EJP No. 825575.  OMB is funded by a fellowship from the Algerian Ministry of Higher Education and Scientific Research.  
 
 ## References
 
