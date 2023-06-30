@@ -203,7 +203,7 @@ It should be noted that the Web-based tool does not immediately generate ODRL, b
 
 ### Web-based Translator
 
-As noted earlier, ODRL documents are meant entirely for the consumption of a computational agent, and are quite opaque for a human reader.  As such, to support comprehension and _informed_"_ consent, we have also constructed a "translator", which converts ODRL documents into narrative, human readable text.  While this work is ongoing, the current output from the translator is show in Figure 4.  Being machine-readable, ODRL documents will often lack support for the human reader, such as a label or definition therefore, where possible, the translator attempts to extract a human-readable string from the data (for example, the last field in a URL will often be a "word" indicating the purpose or interpretation of that URL - such as _http://www.w3.org/ns/odrl/2/use_). 
+As noted earlier, ODRL documents are meant entirely for the consumption of a computational agent, and are quite opaque for a human reader.  As such, to support comprehension and _informed_ consent, we have also constructed a "translator", which converts ODRL documents into narrative, human readable text.  While this work is ongoing, the current output from the translator is shown in Figure 5.  Being machine-readable, ODRL documents will often lack support for the human reader, such as a label or definition therefore, where possible, the translator attempts to extract a human-readable string from the data (for example, the last field in a URL will often be a "word" indicating the purpose or interpretation of that URL - such as _http://www.w3.org/ns/odrl/2/use_). 
 
 | <img src="./translated.png" width="500"> | 
 |:--:| 
