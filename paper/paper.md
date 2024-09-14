@@ -277,5 +277,3 @@ This project is ongoing, and will benefit from a number of improvements that can
 We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project. MDW is funded via the European Union's Horizon 2020 research and innovation programme under the EJP RD COFUND-EJP No. 825575.  OMB is funded by a fellowship from the Algerian Ministry of Higher Education and Scientific Research.  
 
 ## References
-
-1.
